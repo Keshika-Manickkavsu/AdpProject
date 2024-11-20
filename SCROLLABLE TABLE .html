@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Table with Fixed Header</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+    
+        th {
+            background-color: #f4f4f4;
+            position: sticky;
+            top: 0;
+            z-index: 2; 
+        }
+
+
+        .table-container {
+            max-height: 300px; 
+            overflow-y: auto;  
+            overflow-x: auto;  
+            width: 100%;  
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+
+        tr:nth-child(odd) {
+            background-color: peachpuff;
+        }
+
+    
+        tr:hover {
+            background-color:skyblue;
+        }
+
+    
+        th, td {
+            min-width: 120px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Zip Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Keshika</td><td>Keshika@gmail.com</td><td>USA</td><td>123-456-7890</td><td>123 Elm Street</td><td>New York</td><td>10001</td></tr>
+                <tr><td>2</td><td>Sowmiya</td><td>Sowmiyagmail.com</td><td>Canada</td><td>234-567-8901</td><td>456 Oak Avenue</td><td>Toronto</td><td>M5G 1Z5</td></tr>
+                <tr><td>3</td><td>Sasmitha</td><td>Sasmitha@gmail.com</td><td>UK</td><td>345-678-9012</td><td>789 Pine Road</td><td>London</td><td>EC1A 1BB</td></tr>
+                <tr><td>4</td><td>Roshini</td><td>Roshini@gmail.com</td><td>Australia</td><td>456-789-0123</td><td>101 Maple Lane</td><td>Sydney</td><td>2000</td></tr>
+                <tr><td>5</td><td>Sana</td><td>Sana@gmail.com</td><td>Germany</td><td>567-890-1234</td><td>202 Birch Blvd</td><td>Berlin</td><td>10115</td></tr>
+                <tr><td>6</td><td>Maha</td><td>Maha@gmail.com</td><td>France</td><td>678-901-2345</td><td>303 Cedar Parkway</td><td>Paris</td><td>75001</td></tr>
+                <tr><td>7</td><td>Varshini</td><td>Varshini@gmail.com</td><td>Italy</td><td>789-012-3456</td><td>404 Pinecrest Drive</td><td>Rome</td><td>00100</td></tr>
+                <tr><td>8</td><td>Sonali</td><td>Sonali@gmail.com</td><td>Spain</td><td>890-123-4567</td><td>505 Fir Avenue</td><td>Madrid</td><td>28001</td></tr>
+                <tr><td>9</td><td>Bhavani</td><td>Bhavanigmail.com</td><td>Mexico</td><td>901-234-5678</td><td>606 Redwood Street</td><td>Mexico City</td><td>01000</td></tr>
+                <tr><td>10</td><td>Samaya</td><td>Samaya@gmail.com</td><td>Brazil</td><td>012-345-6789</td><td>707 Cherry Circle</td><td>Rio de Janeiro</td><td>20000</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
